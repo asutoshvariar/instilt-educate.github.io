@@ -10,25 +10,6 @@
 
 <h4 align="center">Help us help children everywhere have equal opportunities at a bright future, no matter their background!</h4>
 
-## Key Features
-
-* LivePreview - Make changes, See changes
-  - Instantly see what your Markdown documents look like in HTML as you create them.
-* Sync Scrolling
-  - While you type, LivePreview will automatically scroll to the current location you're editing.
-* GitHub Flavored Markdown  
-* Syntax highlighting
-* Dark/Light mode
-* Toolbar for basic Markdown formatting
-* Supports multiple cursors
-* Save the Markdown preview as PDF
-* Emoji support in preview :tada:
-* App will keep alive in tray for quick usage
-* Full screen mode
-  - Write distraction free.
-* Cross platform
-  - Windows, macOS and Linux ready.
-
 ## Donate
 
 <a href="https://bank.hackclub.com/donations/start/instilt-educate" target="_blank">Instilt Donation Page</a>
