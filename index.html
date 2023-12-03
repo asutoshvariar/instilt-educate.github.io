@@ -19,6 +19,8 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/milestone.css" rel="stylesheet">
     <link href="css/styles-master.css" rel="stylesheet">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.css ">
     <script src="https://kit.fontawesome.com/21cad11b53.js" crossorigin="anonymous"></script>
     <script src="js/mapdata.js"></script>
     <script src="js/worldmap.js"></script>
@@ -78,6 +80,73 @@
             </div>
             
     </header>
+
+    <!--Blog Slider-->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/One.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <div class="container text">
+                        <center><h1>Blog 1</h1></center> 
+                        <center class="inline-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, impedit? Ratione cupiditate, quo at pariatur incidunt amet eaque dolore modi sit expedita aspernatur labore voluptate quod quidem omnis. Non, atque.</p></center> 
+                        <center><a href="#" class="btn btn-lg btn-primary">Read Blog</a></center>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/Two.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <div class="container text">
+                        <center><h1>Blog 2</h1></center> 
+                        <center class="inline-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, impedit? Ratione cupiditate, quo at pariatur incidunt amet eaque dolore modi sit expedita aspernatur labore voluptate quod quidem omnis. Non, atque.</p></center> 
+                        <center><a href="#" class="btn btn-lg btn-primary">Read Blog</a></center>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/Three.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <div class="container text">
+                        <center><h1>Blog 3</h1></center> 
+                        <center class="inline-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, impedit? Ratione cupiditate, quo at pariatur incidunt amet eaque dolore modi sit expedita aspernatur labore voluptate quod quidem omnis. Non, atque.</p></center> 
+                        <center><a href="#" class="btn btn-lg btn-primary">Read Blog</a></center>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/Four.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <div class="container text">
+                        <center><h1>Blog 4</h1></center> 
+                        <center class="inline-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, impedit? Ratione cupiditate, quo at pariatur incidunt amet eaque dolore modi sit expedita aspernatur labore voluptate quod quidem omnis. Non, atque.</p></center> 
+                        <center><a href="#" class="btn btn-lg btn-primary">Read Blog</a></center>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <div class="container">        
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ex odit corporis eos qui minus cumque nihil hic repellat aliquam rerum consequuntur, cupiditate beatae dolores dolorem facilis sunt provident deserunt.</p>
+        </div>
+    </div>
+    </section>
+
+    
     <!-- About-->
     <section class="about-section text-center" id="mission">
         <div class="container" id="mission-section">
@@ -239,7 +308,39 @@
                 </div>
             </div>
         
+<!-- Gallery -->
+    <section id="gallery">
+        <div class="container">
+        <h1>Our Model</h1>
+        <div class="slider">
+            <div class="owl-carousel">
+                <div class="slider-card">
+                    <div class="d-flex justify-content-center align-items-center mb-4">
+                        <img src="images/One.png" alt="#" style="width: 100rem; height: 250px">
+                    </div> 
+                </div>
+                <div class="slider-card">
+                    <div class="d-flex justify-content-center align-items-center mb-4">
+                        <img src="images/Two.png" alt="#" style="width: 100rem; height: 250px">
+                    </div> 
+                </div>
+                <div class="slider-card">
+                    <div class="d-flex justify-content-center align-items-center mb-4">
+                        <img src="images/Three.jpg" alt="#" style="width: 100rem; height: 250px">
+                    </div> 
+                </div>
+                <div class="slider-card">
+                    <div class="d-flex justify-content-center align-items-center mb-4">
+                        <img src="images/Four.jpg" alt="#" style="width: 100rem; height: 250px">
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <p>In an effort to grow and deepen the understanding of our students, we use a unique model. For our faculty, we pair one native English speaker with another tutor proficient in the language of the students. This way students are able to enjoy the best of both worlds as they are pushed to communicate seamlessly with a qualified tutor who speaks English in their day-to-day, allowing them some great outside exposure. At the same time, the other tutor is always to ensure that the students are following, maintaining a comfortable and familiar environment for the children.</p>
+        </div>
+    </section>
 
+<!-- Partners -->  
     <section class="projects-section bg-light" id="partners" style="padding-top: 0rem !important;">
         <div class="container">
           <div class="heading">Our Partners</div>
@@ -525,6 +626,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <!-- Owl carousel JS -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="owl.carousel.min.js"></script>
 
     <script>
         
