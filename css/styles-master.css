@@ -10646,6 +10646,7 @@ body {
     bottom: 45% !important;
     width: 6% !important;
     background: transparent;
+    border-style: none;
 }
 
 .carousel-item img {
