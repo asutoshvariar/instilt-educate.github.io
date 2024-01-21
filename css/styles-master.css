@@ -10419,14 +10419,15 @@ body {
 
 #mainNav {
     min-height: 3.5rem;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 #mainNav .navbar-toggler {
     font-size: 80%;
     padding: 0.75rem;
-    color: #5b0000;
+    color: #dbdbdb;
     border: 1px solid #5b0000;
+    background-color: #5b0000;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -10436,7 +10437,7 @@ body {
 #mainNav .navbar-brand {
     color: #000000;
     font-weight: 700;
-    padding: 0.9rem 0;
+    padding: 0rem 0rem 0rem 0rem; 
 }
 
 #mainNav .navbar-nav .nav-item:hover {
@@ -11199,8 +11200,6 @@ a[href="mailto:edu@instilt.com"]:hover{
         flex-wrap: nowrap;
         flex-direction: row-reverse;
         justify-content:space-around;
-        align-items: baseline;
-        box-shadow: rgb(149 157 165 / 25%) 0px 8px 24px;
     }
  }
 
@@ -11390,11 +11389,12 @@ form textarea{
 }
 
 #join-us-icons{
-    display: flex;
     text-align: center;
-    margin-top: 1rem;
-    justify-content: center;
+    align-self: auto;
+    justify-content: left;
+    padding-left: 4rem;
     gap: 10px;
+    margin-right: -5rem;
 }
 
 #join-us-page {
@@ -11896,6 +11896,53 @@ form textarea{
       align-items: center;
   }
 
+  @media only screen and (max-width: 1000px) {
+    #dropdown {
+        display: none;
+    }
+    #dropdown2 {
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+    #mainDropdownCont {
+        width: 100%;
+        max-width: 100%;
+    }
+    #join-us-icons {
+        margin-left: 45%;
+        margin-right: 0;
+        padding-left: auto;
+    }
+    .navbar-toggler {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+    #navbar-collapse {
+        width: 100%;
+        max-width: 100%;
+    }
+    #nav-link {
+        width: inherit;
+        max-width: inherit;
+        margin-left: 50px;
+        background-color: inherit;
+    }
+    .navbar-brand {
+        position: absolute;
+    }
+    #mainNav {
+        background-color: #222222;
+    }
+  }
+
+  @media screen and (min-width: 1001px) {
+    #dropdown2 {
+        display: none;
+    }
+    #dropdown {
+        display: block;
+    }
+  }
 /*---- CAROUSEL STYLE ----*/
 html{
     scroll-behavior: smooth;
@@ -12044,6 +12091,3 @@ body{
     font-weight: 800;
 }
 
-
-
-  
