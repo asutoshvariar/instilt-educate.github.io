@@ -6725,7 +6725,6 @@ a.close.disabled {
 
 .popover-body {
     padding: 0.5rem 0.75rem;
-    color: #212529;
 }
 
 .carousel {
@@ -6739,6 +6738,9 @@ a.close.disabled {
 .carousel-inner {
     position: relative;
     width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #f8f8f8;
     overflow: hidden;
 }
 
@@ -6746,6 +6748,7 @@ a.close.disabled {
     display: block;
     clear: both;
     content: "";
+    background-color: #f8f8f8;
 }
 
 .carousel-item {
@@ -6753,9 +6756,11 @@ a.close.disabled {
     display: none;
     float: left;
     width: 100%;
+    max-height: 680px;
     margin-right: -100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    background-color: #f8f8f8;
     transition: transform 0.6s ease-in-out;
 }
 
@@ -10662,6 +10667,7 @@ body {
 
 #myCarousel {
     margin: 0 20px;
+    background-color: #f8f8f8;
     box-shadow: rgb(111 100 100 / 20%) 0px 7px 29px 0px;
 }
 
@@ -11944,13 +11950,8 @@ form textarea{
     }
   }
 /*---- CAROUSEL STYLE ----*/
-html{
-    scroll-behavior: smooth;
-}
 
-body{
-    background-color: #fff;
-}
+
 
 #gallery .container h1{
     text-align: center;
