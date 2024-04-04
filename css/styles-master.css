@@ -96,7 +96,7 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff;
+    background-color: #fafafa;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -11960,6 +11960,10 @@ form textarea{
     color: rgb(104, 10, 10);
 }
 
+#gallery {
+	background-color: #fafafa;
+}
+
 .slider{
     margin-bottom: 20px;
     position: relative;
@@ -12090,5 +12094,12 @@ form textarea{
 
 #blog .carousel-control-prev-icon, #blog .carousel-control-next-icon{
     font-weight: 800;
+}
+
+/* TALLY FORM STYLE */
+.typeform-widget {
+	height: 800px; 
+	max-width: 1200px; 
+	margin: auto; 
 }
 
