@@ -954,18 +954,19 @@ pre code {
 #partner-img {
     display: flex;
     margin: auto auto;
-    width: 200px;
+    width: 150px;
     height: 120px;
     object-fit: contain;
     align-items: center;
     justify-content: center;
+    padding-bottom: 1rem;
 }
 
 
 #partner-img {
     display: flex;
     margin: auto auto;
-    width: 200px;
+    width: 150px;
     height: 120px;
     object-fit: contain;
     align-items: center;
@@ -977,6 +978,7 @@ pre code {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
+    margin: 0.5rem 1rem;
 }
 
 .partner-row a {
@@ -997,7 +999,7 @@ pre code {
     flex: 1 0 20%;
     position: relative;
     height: 170px;
-    padding: 0.2rem;
+    padding: 1rem 0.2rem;
   }
   
   .partner-heading {
@@ -3379,7 +3381,7 @@ input[type=button].btn-block {
 }
 
 .collapse:not(.show) {
-    display: none;
+    display: none !important;
 }
 
 .collapsing {
@@ -10930,6 +10932,7 @@ a[href="mailto:edu@instilt.com"]:hover{
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10vh;
     list-style: none !important;
     padding: 0 !important;
     text-align: inherit !important;
@@ -11020,6 +11023,7 @@ a[href="mailto:edu@instilt.com"]:hover{
     text-align: center;
     font-size: 5rem;
     text-transform: capitalize;
+    padding: 10vh 5vh;
 }
 
 .subheading {
@@ -11099,7 +11103,6 @@ a[href="mailto:edu@instilt.com"]:hover{
 }
 
 #teamabout {
-    padding: 6vh 20px 4rem 20px;
     line-height: 1;
     display: flex;
     justify-content: center;
@@ -11107,14 +11110,6 @@ a[href="mailto:edu@instilt.com"]:hover{
     -webkit-text-stroke-width: 0px;
     -webkit-text-stroke-color: #700000;
 }
-
-#model {
-    font-family: montserrat !important;
-    text-align: center;
-    text-transform: capitalize;
-    font-weight: 600;
-}
-
 
 
 #mission-subtitle {
@@ -11126,6 +11121,7 @@ a[href="mailto:edu@instilt.com"]:hover{
     text-shadow: none;
     text-transform: none;
     font-weight: normal;
+    margin: 1rem 2rem;
 }
 
 
@@ -11344,6 +11340,10 @@ a[href="mailto:edu@instilt.com"]:hover{
     width:100%;
     flex-direction: column;
     
+ }
+
+ .social-item-1 {
+    margin: 0px;
  }
 
  div.populated{
@@ -11924,7 +11924,7 @@ form textarea{
       align-items: center;
   }
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-device-width: 1000px) {
     #dropdown {
         display: none;
     }
@@ -11963,7 +11963,7 @@ form textarea{
     }
   }
 
-  @media screen and (min-width: 1001px) {
+  @media screen and (min-device-width: 1001px) {
     #dropdown2 {
         display: none;
     }
@@ -11983,6 +11983,10 @@ form textarea{
 
 #model {
 	background-color: #fafafa;
+    font-family: montserrat !important;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
 }
 
 .slider{
