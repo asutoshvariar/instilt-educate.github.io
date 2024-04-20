@@ -4597,6 +4597,20 @@ input[type=button].btn-block {
     list-style: none;
 }
 
+@media (max-device-width: 576px) {
+    .navbar-nav {
+        position: fixed;
+        top: 9.5vh;
+        z-index: 1040;
+        width: 100%;
+        background-color: rgba(800, 800, 800, 0.5);
+        padding-bottom: 1rem;
+        border-bottom: lightgray;
+        border-bottom-width: thin;
+        border-bottom-style: solid;
+    }
+}
+
 .navbar-nav .nav-link {
     padding-right: 0;
     padding-left: 0;
