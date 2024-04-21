@@ -12125,3 +12125,6 @@ form textarea{
     margin-bottom: 10px; 
 }
 
+.owl-item.active.center {
+    z-index: 1000 !important;
+}

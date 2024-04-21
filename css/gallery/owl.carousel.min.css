@@ -27,8 +27,9 @@
     overflow:hidden;
     -webkit-transform:translate3d(0,0,0)
 }
-.owl-item.active{
-    z-index: 1000 !important;
+
+.owl-item {
+    z-index: auto;
 }
 
 .owl-carousel .owl-item,.owl-carousel .owl-wrapper{
@@ -130,9 +131,7 @@
 .owl-carousel .owl-item .owl-lazy:not([src]),.owl-carousel .owl-item .owl-lazy[src^=""]{
     max-height:0
 }
-.owl-item {
-    z-index: 9999;
-}
+
 .owl-carousel .owl-item img.owl-lazy{
     transform-style:preserve-3d
 }
