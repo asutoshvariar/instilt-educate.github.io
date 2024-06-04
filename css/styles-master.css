@@ -11230,7 +11230,7 @@ a[href="mailto:edu@instilt.com"]:hover{
  @media screen and (max-width: 1300px) {
     a.navbar-brand{
         position:absolute;
-        margin-left: 10%;
+        margin-left: 3rem;
         margin-top:0.05% !important;
     }
     #mainNav{
@@ -11938,53 +11938,7 @@ form textarea{
       align-items: center;
   }
 
-  @media only screen and (max-device-width: 1000px) {
-    #dropdown {
-        display: none;
-    }
-    #dropdown2 {
-        display: inline-block;
-        background-color: rgba(0, 0, 0, 0.05);
-    }
-    #mainDropdownCont {
-        width: 100%;
-        max-width: 100%;
-    }
-    #join-us-icons {
-        margin-left: 45%;
-        margin-right: 0;
-        padding-left: auto;
-    }
-    .navbar-toggler {
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
-    }
-    #navbar-collapse {
-        width: 100%;
-        max-width: 100%;
-    }
-    #nav-link {
-        width: inherit;
-        max-width: inherit;
-        margin-left: 50px;
-        background-color: inherit;
-    }
-    .navbar-brand {
-        position: absolute;
-    }
-    #mainNav {
-        background-color: #222222;
-    }
-  }
 
-  @media screen and (min-device-width: 1001px) {
-    #dropdown2 {
-        display: none;
-    }
-    #dropdown {
-        display: block;
-    }
-  }
 /*---- CAROUSEL STYLE ----*/
 
 
@@ -12088,6 +12042,33 @@ form textarea{
 .carousel-item img{
     opacity: 0.5;
     width: 100%;
+}
+
+@media (max-width: 1299px) {
+    #join-us-icons {
+        text-align: left;
+        align-self: baseline;
+        justify-content: left;
+        gap: 10px;
+        padding-left: 0px;
+        padding-top: 20px;
+        margin-right: 0px;
+        margin-left: unset;
+    }
+    .navbar .container,
+    .navbar .container-fluid,
+    .navbar .container-sm,
+    .navbar .container-md,
+    .navbar .container-lg,
+    .navbar .container-xl {
+        display: block;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #mainNav {
+        background-color: #000;
+    }
 }
 
 /*MODIFIED 15rem -> 30%, added @media query, so overlaying text doesn't shift up dramatically */
