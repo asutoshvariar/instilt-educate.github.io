@@ -4599,15 +4599,13 @@ input[type=button].btn-block {
 
 @media (max-device-width: 576px) {
     .navbar-nav {
-        position: fixed;
         top: 9.5vh;
         z-index: 1040;
         width: 100%;
-        background-color: rgba(800, 800, 800, 0.5);
         padding-bottom: 1rem;
-        border-bottom: lightgray;
-        border-bottom-width: thin;
-        border-bottom-style: solid;
+    }
+    #mainNav {
+        box-shadow: rgb(149 157 165 / 25%) 0px 8px 24px;
     }
 }
 
@@ -11375,7 +11373,6 @@ a[href="mailto:edu@instilt.com"]:hover{
     flex-direction: row-reverse;
     justify-content:space-around;
     align-items: baseline;
-    box-shadow: rgb(149 157 165 / 25%) 0px 8px 24px;
 }
 
 
