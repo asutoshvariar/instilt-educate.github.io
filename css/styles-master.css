@@ -96,7 +96,7 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fafafa;
+    background-color: #fafafa !important;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -4631,6 +4631,56 @@ input[type=button].btn-block {
     align-items: center;
 }
 
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap; /* Allows wrapping to handle the collapse */
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.middle-text {
+    flex-grow: 1;
+    text-align: center;
+    margin-left: 15%;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Adjust the gap between icons as needed */
+}
+
+.navbar-container a {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-collapse {
+    flex-basis: 100%; /* Ensure the collapsible part takes full width when open */
+}
+
+@media (min-width: 769px) {
+    .navbar-toggler {
+        display: none; /* Hide menu button in full-screen view */
+    }
+    .navbar-brand{
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .middle-text {
+        display: none; /* Hide middle text at 500px and below */
+    }
+}
+
 .navbar-toggler {
     padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
@@ -4785,6 +4835,9 @@ input[type=button].btn-block {
         flex-basis: auto;
     }
     .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+    .middle-text{
         display: none;
     }
 }
@@ -10532,11 +10585,11 @@ body {
         display: flex;
         align-items: center;
     }
-    #mainNav .navbar-brand {
+    /* #mainNav .navbar-brand {
         position: absolute;
         padding: 0.5rem 0;
         color: rgba(255, 255, 255, 0.75);
-    }
+    } */
     #mainNav .nav-link {
         transition: color 0.5s ease-in-out;
         padding: 1.5rem 1.5rem 1.25rem;
@@ -11035,7 +11088,6 @@ a[href="mailto:edu@instilt.com"]:hover{
     text-align: center;
     font-size: 5rem;
     text-transform: capitalize;
-    padding: 10vh 5vh;
 }
 
 .subheading {
@@ -11437,6 +11489,7 @@ form textarea{
 
 #join-us-page {
     padding-top: 6vh;
+    background-color: #fafafa;
 }
 
 
