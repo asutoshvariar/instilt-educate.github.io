@@ -77,7 +77,7 @@
 #milestone ul li .milestone-line:after{
     content: '';
     height: 35px;
-    width: 122.5%;
+    width: 150%;
     display: block;
     position: absolute;
     background: #710000;
