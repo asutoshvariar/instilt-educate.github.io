@@ -643,10 +643,11 @@ a.text-primary:focus {
     .masthead h2 {
         font-size: 1.05rem;
     }
-    #logo-image { 
-        height: 20rem !important; 
+
+    #logo-image {
+        height: 20rem !important;
         width: 20rem !important;
-     }
+    }
 }
 
 
@@ -824,12 +825,12 @@ a.text-primary:focus {
 
 }
 
-#logo-image { 
-    height: 18rem; 
+#logo-image {
+    height: 18rem;
     width: 18rem;
-    box-shadow: rgba(111, 100, 100, 0.2) 0px 7px 29px 0px;    
+    box-shadow: rgba(111, 100, 100, 0.2) 0px 7px 29px 0px;
     border-radius: 50%;
- }
+}
 
 .footer-logo {
     border-style: none;
@@ -1523,7 +1524,7 @@ input {
     }
 
     #mainNav {
-        background-color: #000;
+        background-color: #222222;
     }
 }
 
