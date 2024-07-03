@@ -1541,10 +1541,6 @@ input {
     font-weight: 600;
 }
 
-.model-text{
-    text-transform: capitalize;
-}
-
 @media (max-width: 1299px) {
     .navbar .container {
         display: block;
