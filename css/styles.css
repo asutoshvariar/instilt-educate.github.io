@@ -1010,7 +1010,7 @@ a.text-primary:focus {
     color: #212529;
 }
 
-#model p {
+.model-text {
     text-shadow: none;
     text-transform: none;
     font-weight: normal;
@@ -1489,7 +1489,7 @@ a.text-primary:focus {
             padding: 2rem;
         }
 
-        #model {
+        .model-text {
             font-size: 3.5rem;
         }
 
@@ -1538,8 +1538,11 @@ input {
     background-color: #fafafa;
     font-family: montserrat !important;
     text-align: center;
-    text-transform: capitalize;
     font-weight: 600;
+}
+
+.model-text{
+    text-transform: capitalize;
 }
 
 @media (max-width: 1299px) {
