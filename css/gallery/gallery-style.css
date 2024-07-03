@@ -18,6 +18,13 @@ body{
     position: relative;
 }
 
+@media screen and (max-width: 640px){
+    .owl-item.active.center{
+        width: 100%;
+    }
+}
+
+
 /*MODIFIED: Added fade to active center image on mobile */
 @media(max-width: 641px) {
     .owl-item.active.center{
@@ -30,8 +37,27 @@ body{
     transform: scale(1.15);
     opacity: 1;
     z-index: 1 !important;
-    background-color: #ccc;
-    color: #fff;
+}
+
+.owl-carousel .owl-stage {
+    display: flex;
+    align-items: center;
+}
+
+.owl-stage-outer{
+    max-height: 500px;
+}
+
+.slider-card p {
+    display: none;
+}
+
+.owl-item.active.center .slider-card p {
+    display: block;
+}
+
+.owl-item.active.center {
+    top: 1rem;
 }
 
 .owl-theme .owl-controls .owl-page span {
@@ -45,13 +71,21 @@ body{
 }
 
 .slider .slider-card{
-    background-color: #fff;
     margin: 50px 15px 90px 15px;
     border-radius: 5px;
-    box-shadow: 0 15px 45px -20px rgba(206, 191, 191, 0.493);
+    /* box-shadow: 0 15px 45px -20px rgba(206, 191, 191, 0.493); */
     transform: scale(0.8);
     opacity: 0.7;
     transition: all 0.5s ease-in-out;
+}
+
+.owl-item img {
+    width: 100rem !important;
+    height: 250px !important;
+}
+
+.caption{
+    text-align: center;
 }
 
 /*MODIFIED: Remove describing text in the blog on mobile*/
@@ -74,9 +108,46 @@ body{
 
 /*MODIFIED: Resized to avoid image overlap on mobile*/
 @media(max-width: 641px) {
-    .slider-card :not([active]) :not([center]) {
-        max-width: 100%;
-        overflow: hidden;
+    .owl-item [active] :not([center]) {
+        display: none;
+    }
+    .slider-card [active] :not([center]) {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px){
+    .owl-item img {
+        width: 85% !important;
+        height: 350px !important;
+    }
+    .owl-stage-outer{
+        max-height: 600px;
+    }
+}
+@media (max-width: 640px){
+    .owl-item img{
+        width: 100% !important;
+        height: auto !important;
+        margin: auto 0;
+    }
+    .owl-stage-outer{
+        max-height: 450px;
+    }
+}
+
+@media (max-width: 540px){
+    .owl-stage-outer{
+        max-height: 360px;
+    }
+}
+
+@media (max-width: 420px){
+    .owl-stage-outer{
+        max-height: 320px;
+    }
+    .owl-controls{
+        margin-bottom: 2rem;
     }
 }
 
@@ -98,16 +169,6 @@ body{
     z-index: 1;
     left: -3rem; 
     font-size: 40px !important;
-}
-
-@media screen and (max-width: 641px){
-    .owl-nav .owl-next{
-        right: -2rem;
-    }
-
-    .owl-nav .owl-prev{
-        left: -2rem;
-    }
 }
 
 @media screen and (max-width: 641px){
