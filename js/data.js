@@ -982,12 +982,6 @@ var partnerData = [
         image: "assets/img/partners/Liquid.png",
     },
     {
-        id: 9011,
-        name: "Moroccan National Debate Team",
-        link: "https://teammorocco.org/",
-        image: "assets/img/partners/MNDT.png",
-    },
-    {
         id: 9012,
         name: "Rwanda Girls Initiative",
         link: "https://rwandagirlsinitiative.org/",
@@ -995,9 +989,9 @@ var partnerData = [
     },
     {
         id: 9013,
-        name: "Teach for Speech",
-        link: "https://www.teachforspeech.org/",
-        image: "assets/img/partners/TFS.png",
+        name: "Barefoot College International",
+        link: "https://www.barefootcollegetilonia.org/",
+        image: "assets/img/partners/BCI.png",
     },
     {
         id: 9014,

@@ -184,6 +184,17 @@ function removeElement(element) {
 
 // Display partners by generating html
 function loadPartners(partnerData) {
+	function fillArray(arr) {
+		const remainder = arr.length % 5;
+		if (remainder !== 0) {
+			const objectsToAdd = 5 - remainder;
+			for (let i = 0; i < objectsToAdd; i++) {
+				arr.push({});
+			}
+		}
+		return arr;
+	}
+	partnerData = fillArray(partnerData);
 	partnerData.forEach((partner) => {
 		var div = document.createElement("div");
 		div.setAttribute("class", "partner-box");
