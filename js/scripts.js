@@ -184,17 +184,7 @@ function removeElement(element) {
 
 // Display partners by generating html
 function loadPartners(partnerData) {
-	function fillArray(arr) {
-		const remainder = arr.length % 5;
-		if (remainder !== 0) {
-			const objectsToAdd = 5 - remainder;
-			for (let i = 0; i < objectsToAdd; i++) {
-				arr.push({});
-			}
-		}
-		return arr;
-	}
-	partnerData = fillArray(partnerData);
+
 	partnerData.forEach((partner) => {
 		var div = document.createElement("div");
 		div.setAttribute("class", "partner-box");
@@ -207,11 +197,13 @@ function loadPartners(partnerData) {
 		anchor.setAttribute("target", "_blank");
 
 		// Create an img element
-		var img = document.createElement("img");
-		img.setAttribute("id", "partner-img");
-		img.setAttribute("src", partner.imageUrl);
-		img.setAttribute("alt", partner.name);
-
+		if (partner.image){
+			var img = document.createElement("img");
+			img.setAttribute("id", "partner-img");
+			img.setAttribute("src", partner.image);
+			img.setAttribute("alt", partner.name);
+		}
+		
 		// Create a div for text content
 		var textDiv = document.createElement("div");
 
