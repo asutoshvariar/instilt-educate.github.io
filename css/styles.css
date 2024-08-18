@@ -146,7 +146,7 @@ a:hover {
 .partner-box {
     display: table;
     flex-wrap: wrap;
-    flex: 1 0 20%;
+    flex: 0 0 20%;
     position: relative;
     height: 170px;
     padding: 1rem 0.2rem;
