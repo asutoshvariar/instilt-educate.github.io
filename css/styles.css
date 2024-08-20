@@ -206,12 +206,12 @@ a:hover {
     display: block;
     margin: auto;
     width: 80%;
-    max-height: 250px;
+    max-height: 230px;
 }
 
 @media only screen 
-  and (min-device-height: 320px) 
-  and (max-device-height: 480px)
+  and (min-device-height: 150px) 
+  and (max-device-height: 648px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
     .popup {
@@ -223,6 +223,23 @@ a:hover {
     }
     #popup-form {
         max-height: 220px;
+    }
+}
+
+@media screen and (max-height: 750px) {
+    .popup {
+        max-height: 89%;
+    }
+    #popup-image {
+        width: auto;
+        max-height: 150px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .popup {
+        max-width: 95%;
+        max-height: 90%;
     }
 }
 
