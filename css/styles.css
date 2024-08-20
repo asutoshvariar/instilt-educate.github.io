@@ -111,7 +111,6 @@ a:hover {
     padding: 0rem 0.75rem;
 }
 
-
 #partner-img {
     display: flex;
     margin: auto auto;
@@ -128,7 +127,6 @@ a:hover {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    margin: 0.5rem 1rem;
 }
 
 .partner-row a {
@@ -146,10 +144,34 @@ a:hover {
 .partner-box {
     display: table;
     flex-wrap: wrap;
-    flex: 1 0 20%;
+    flex: 0 0 20%;
     position: relative;
     height: 170px;
     padding: 1rem 0.2rem;
+}
+
+@media screen and (max-width: 992px) {
+    .partner-box {
+        flex: 0 0 25%;
+    }   
+}
+
+@media screen and (max-width: 628px) {
+    .partner-box {
+        flex: 0 0 33%;
+    }   
+}
+
+@media screen and (max-width: 470px) {
+    .partner-box {
+        flex: 0 0 50%;
+    }   
+}
+
+@media screen and (max-width: 320px) {
+    .partner-box {
+        flex: 0 0 100%;
+    }   
 }
 
 .partner-heading {
@@ -166,7 +188,101 @@ a:hover {
     /* Center horizontally */
 }
 
+.popup {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out; 
+    z-index: 1200;
+    background-color: white;
+    border: 10px solid #700000;
+    border-radius: 15px;
+    width: 500px;
+    max-width: 85%;
+}
 
+#popup-image {
+    display: block;
+    margin: auto;
+    width: 80%;
+    max-height: 250px;
+}
+
+@media only screen 
+  and (min-device-height: 320px) 
+  and (max-device-height: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .popup {
+        max-height: 350px;
+        top: 50%;
+    }
+    #popup-image {
+        display: none;
+    }
+    #popup-form {
+        max-height: 220px;
+    }
+}
+
+.popup-header {
+    padding: 10px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.popup-header .title {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+    .popup-header .title {
+        font-size: 1.3rem;
+    }
+}
+
+.popup-body {
+    padding: 10px 15px;
+}
+
+.popup .close {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    float: right;
+    font-size: 2rem;
+    padding-top: 0.2rem;
+    font-weight: bold;
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-subtitle {
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    overflow: hidden;
+    pointer-events: all;
+}
 
 @media (min-width: 768px) {
     .col-md-4 {
@@ -342,7 +458,7 @@ a:hover {
     background-color: transparent;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1350px) {
     #mainNav {
         padding-top: 0;
         padding-bottom: 0;
@@ -496,7 +612,7 @@ a:hover {
 }
 
 
-@media (min-width: 1300px) {
+@media (min-width: 1350px) {
     .navbar-expand-lg {
         flex-flow: row nowrap;
         justify-content: flex-start;
@@ -1135,7 +1251,7 @@ a.text-primary:focus {
     font-size: 1.5rem;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1350px) {
     a.navbar-brand {
         position: absolute;
         margin-left: 3rem;
@@ -1473,7 +1589,7 @@ a.text-primary:focus {
         margin: 30px;
     }
 
-    @media only screen and (min-width: 1300px) {
+    @media only screen and (min-width: 1350px) {
         .nav-link {
             padding: 10px;
         }
@@ -1592,7 +1708,7 @@ input {
     font-weight: 600;
 }
 
-@media (max-width: 1299px) {
+@media (max-width: 1349px) {
     .navbar .container {
         display: block;
         flex-wrap: wrap;

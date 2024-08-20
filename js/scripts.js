@@ -53,6 +53,21 @@
 })(jQuery); // End of use strict
 
 window.addEventListener("DOMContentLoaded", onPageLoad);
+window.addEventListener("DOMContentLoaded", showPopup);
+
+function showPopup() {
+	const popup = document.getElementById("popup");
+	const close = document.getElementById("close");
+	const overlay = document.getElementById("overlay");
+	const body = document.getElementById("page-top");
+	popup.classList.add("active");
+	overlay.classList.add("active");
+	close.addEventListener("click", () => {
+		popup.classList.remove("active");
+		overlay.classList.remove("active");
+	});
+}
+
 
 async function getTeamData() {
 	try {
@@ -229,7 +244,6 @@ function loadPartners(partnerData) {
 
 		// Append the anchor and text div to the div
 		div.appendChild(anchor);
-
 		document.getElementById("partner-card").appendChild(div);
 	});
 
