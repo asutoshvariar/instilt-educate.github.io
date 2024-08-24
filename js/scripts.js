@@ -59,13 +59,16 @@ function showPopup() {
 	const popup = document.getElementById("popup");
 	const closeButton = document.getElementById("close");
 	const overlay = document.getElementById("overlay");
+	const navButton = document.getElementById("nav-button");
 
 	popup.classList.add("active");
 	overlay.classList.add("active");
+	navButton.disabled = true;
 
 	closeButton.addEventListener("click", () => {
 		popup.classList.remove("active");
 		overlay.classList.remove("active");
+		navButton.disabled = false;
 	});
 }
 

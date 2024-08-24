@@ -239,6 +239,31 @@ a:hover {
     padding: 0.5rem;
 }
 
+.popup-body {
+    padding: 10px 15px;
+}
+
+.popup .close {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    float: right;
+    font-size: 2rem;
+    padding-top: 0.2rem;
+    font-weight: bold;
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-subtitle {
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
 @media only screen 
   and (min-device-height: 150px) 
   and (max-device-height: 648px)
@@ -254,6 +279,13 @@ a:hover {
     }
     #popup-form {
         max-height: 220px;
+    }
+    .popup-title {
+        font-size: 1.5rem;
+        margin: 2px 0;
+    }
+    .popup-subtitle {
+        margin-top: 0.5rem;
     }
 }
 
@@ -287,30 +319,6 @@ a:hover {
     }
 }
 
-.popup-body {
-    padding: 10px 15px;
-}
-
-.popup .close {
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    float: right;
-    font-size: 2rem;
-    padding-top: 0.2rem;
-    font-weight: bold;
-}
-
-.popup.active {
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.popup-subtitle {
-    font-size: 0.75rem;
-    text-align: center;
-    margin-top: 1.5rem;
-}
 
 #overlay {
     position: fixed;
