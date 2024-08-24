@@ -57,12 +57,13 @@ window.addEventListener("DOMContentLoaded", showPopup);
 
 function showPopup() {
 	const popup = document.getElementById("popup");
-	const close = document.getElementById("close");
+	const closeButton = document.getElementById("close");
 	const overlay = document.getElementById("overlay");
-	const body = document.getElementById("page-top");
+
 	popup.classList.add("active");
 	overlay.classList.add("active");
-	close.addEventListener("click", () => {
+
+	closeButton.addEventListener("click", () => {
 		popup.classList.remove("active");
 		overlay.classList.remove("active");
 	});
