@@ -291,6 +291,7 @@ a:hover {
     .popup-text {
         font-size: 0.6rem;
         padding: 0.3rem;
+        margin-bottom: 0.2rem;
     }
 }
 
