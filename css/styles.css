@@ -196,7 +196,6 @@ a:hover {
     transition: 200ms ease-in-out; 
     z-index: 1200;
     background-color: white;
-    border: 5px solid #700000;
     border-radius: 10px;
     width: 500px;
     max-width: 85%;
@@ -240,12 +239,6 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: 0.15rem;
     border: 0;
-}
-
-@media screen and (max-width: 440px) {
-    #nav-btn {
-        display: none;
-    }
 }
 
 .popup-text {
@@ -669,19 +662,40 @@ a:hover {
     color: white;
 }
 
-.social-icons {
+.right-section {
     display: flex;
     align-items: center;
     gap: 15px;
     /* Adjust the gap between icons as needed */
 }
 
-.navbar-container a {
+.menu-icons {
+    display: flex;
     align-items: center;
+    gap: 15px;
+    /* Adjust the gap between icons as needed */
 }
 
 .logo-img {
     margin-left: 0.2em;
+}
+
+@media screen and (min-width: 440px) {
+    .menu-icons {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 440px) {
+    .social-icon {
+        display: none;
+    }
+}
+
+
+.navbar-container a {
+    align-items: center;
 }
 
 @media (max-width: 600px) {
@@ -690,7 +704,6 @@ a:hover {
         /* Hide middle text at 500px and below */
     }
 }
-
 
 @media (min-width: 1350px) {
     .navbar-expand-lg {
@@ -1345,7 +1358,7 @@ a.text-primary:focus {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 260px) {
     a.navbar-brand {
         display: none;
     }
@@ -1788,7 +1801,7 @@ input {
     font-weight: 600;
 }
 
-@media (max-width: 1349px) {
+@media (max-width: 1350px) {
     .navbar .container {
         display: block;
         flex-wrap: wrap;
