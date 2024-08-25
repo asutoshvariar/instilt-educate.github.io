@@ -990,7 +990,7 @@ var partnerData = [
     {
         id: 9013,
         name: "Barefoot College International",
-        link: "https://www.barefootcollegetilonia.org/",
+        link: "https://www.barefootcollege.org/",
         image: "assets/img/partners/BCI.png",
     },
     {
