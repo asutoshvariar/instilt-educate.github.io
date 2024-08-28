@@ -1812,6 +1812,10 @@ input {
     #mainNav {
         background-color: #222222;
     }
+
+    #big-nav-donate {
+        display: none;
+    };
 }
 
 .owl-item.active.center {
