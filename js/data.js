@@ -916,6 +916,15 @@ var teamData = [
         "team": "Communications",
         "location": "Dubai, United Arab Emirates",
         "image": "https://drive.google.com/thumbnail?id=1b8AssVyHjB755HPQvNq8DlbIUcZLW0ur"
+    },
+    {
+        "id": 154,
+        "name": "Maggie Zhao",
+        "email": "maggie2007.zhao@gmail.com",
+        "division": "Academics",
+        "team": "Academics",
+        "location": "Florida, United States",
+        "image": "https://drive.google.com/thumbnail?id=1wQh1NG8tGbthpkql8bVx2OtzKYmqTAdJ"
     }
 ]
 
@@ -1014,7 +1023,7 @@ var partnerData = [
     },
     {
         id: 9017,
-        name: "Vajira Sri Children’s Development Center",
+        name: "Vajira Sri Children's Development Center",
         link: "http://vajirasri.com/",
         image: "assets/img/partners/VajiraSri.png",
     },
