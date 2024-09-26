@@ -925,7 +925,7 @@ var teamData = [
         "team": "Academics",
         "location": "Florida, United States",
         "image": "https://drive.google.com/thumbnail?id=1wQh1NG8tGbthpkql8bVx2OtzKYmqTAdJ"
-    }
+    },
 ]
 
 var partnerData = [
