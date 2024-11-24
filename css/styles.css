@@ -1266,8 +1266,15 @@ a.text-primary:focus {
     padding-bottom: 6vh;
     padding-top: 1vh;
     background-color: #fafafa;
+    
 }
 
+#news-iframe
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 #newsletter-text{
     text-align: center;
     font-size: 2.5rem;
