@@ -73,7 +73,7 @@ function createPosts(cards) {
             <div class="news-card1">
                 <div class="news-card-body text-center">
                     <img src="${card.imgSrc}" style="height: 250px; border-radius: 5px">
-                    <i class="fa-brands fa-instagram appIcon"></i>
+                    <i class="fa-brands fa-instagram news-appIcon"></i>
                         <h3 class="article-heading" id="interactive" style="font-size: 20px">${card.heading}</h3>
                     
                     <div class="news-text-container">
@@ -93,7 +93,7 @@ function createPosts(cards) {
             <div class="news-card1">
                 <div class="news-card-body text-center">
                     <img src="${card.imgSrc}" style="height: 250px; border-radius: 5px">
-                    <i class="fa-brands fa-linkedin appIcon"></i>
+                    <i class="fa-brands fa-linkedin news-appIcon"></i>
                         <h3 class="article-heading" id="interactive" style="font-size: 20px">${card.heading}</h3>
                     
                     <div class="news-text-container">
