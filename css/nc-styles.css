@@ -1,4 +1,4 @@
-.container {
+.news-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
@@ -7,16 +7,16 @@
     align-items: stretch;
     position: relative;
 }
-.row {
+.news-row {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
-.col-md-4 {
+.news-col-md-4 {
     flex: 0 0 100%;
     margin-bottom: 3rem;
 }
-.card1 {
+.news-card1 {
     width: 100%;
     max-width: 350px;
 
@@ -31,7 +31,7 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.card-body {
+.news-card-body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,23 +47,17 @@
 }
 
 @media (min-width: 768px) {
-    .col-md-4 {
+    .news-col-md-4 {
         flex: 0 0 50%;
-    }
-    .card-body-img {
-        flex: 0 0 50%
     }
 }
 @media (min-width: 992px) {
-    .col-md-4 {
+    .news-col-md-4 {
         flex: 0 0 30%;
-    }
-    .card-body-img {
-        flex: 0 0 30%
     }
 }
 
-.appIcon{
+.news-appIcon{
     position: absolute;
     top: 228px;
     right: 34px;
@@ -73,7 +67,7 @@
     z-index: 1;
 }
 
-.text-container {
+.news-text-container {
     width: 98%;
     height: 210px;
     overflow: hidden;
@@ -84,13 +78,13 @@
     
 }
 
-.text-container p {
+.news-text-container p {
     margin: 0;
     line-height: 1.5;
     text-align: justify;
 }
 
-.button1 {
+.news-button1 {
     background-color: white;
     color:#272c30;
     border: 2px solid #700000;
@@ -110,7 +104,7 @@
     margin: 10px auto 0;
 }
 
-.button1:hover{
+.news-button1:hover{
     color: white;
     background: #700000;
     border-color: #700000;
