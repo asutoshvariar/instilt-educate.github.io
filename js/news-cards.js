@@ -2,7 +2,7 @@ const cardData = [
     {
         imgSrc: 'nc-carousel-images/img2.png',
         heading: '300 Members Milestone',
-        about: 'Instilt Educate is thrilled to announce that weve reached 300 members! Starting as a high schooler-run nonprofit, we have grown globally with students from India to Rwanda. Our dedicated tutors ensure a rewarding experience for all.',
+        about: 'Instilt Educate is thrilled to announce that we have reached 300 members! Starting as a high schooler-run nonprofit, we have grown globally with students from India to Rwanda. Our dedicated tutors ensure a rewarding experience for all.',
         link: 'https://www.linkedin.com/posts/instilt-edu_instilt-instilteducate-nonprofit-activity-7169154605942038528-QTed?utm_source=share&utm_medium=member_desktop',
         isLinkedInPost: true
     },  
@@ -49,21 +49,19 @@ function createPosts(cards) {
     
     cards.forEach(card => {
         const cardElement = document.createElement('div');
-        cardElement.classList.add('col-md-4');
+        cardElement.classList.add('news-col-md-4');
 
         cardElement.innerHTML = `
-            <div class="card1">
-                <div class="card-body text-center">
+            <div class="news-card1">
+                <div class="news-card-body text-center">
                     <img src="${card.imgSrc}" style="height: 250px border-radius: 5px">
-                    <div class="heading-container">
                         <h3 class="article-heading" id="interactive" style="font-size: 20px">${card.heading}</h3>
-                    </div>
-                    <div class="text-container">
+                    <div class="news-text-container">
                         <p class="article-about small" id="interactive-about" margin-top: 1 flex-grow: 1>${card.about}</p>
                     </div>
                     <a href="${card.link}">
                         <div class="button-container">
-                            <button class="button1" flex-grow: 1> Read More </button>
+                            <button class="news-button1" flex-grow: 1> Read More </button>
                         </div>
                     </a>
                 </div>
@@ -72,18 +70,18 @@ function createPosts(cards) {
 
         if(card.isInstagramPost) {
             cardElement.innerHTML = `
-            <div class="card1">
-                <div class="card-body text-center">
+            <div class="news-card1">
+                <div class="news-card-body text-center">
                     <img src="${card.imgSrc}" style="height: 250px; border-radius: 5px">
                     <i class="fa-brands fa-instagram appIcon"></i>
                         <h3 class="article-heading" id="interactive" style="font-size: 20px">${card.heading}</h3>
                     
-                    <div class="text-container">
+                    <div class="news-text-container">
                         <p class="article-about small" id="interactive-about">${card.about}</p>
                     </div>
                     <a href="${card.link}">
                         <div class="button-container">
-                            <button class="button1"> Read More </button>
+                            <button class="news-button1"> Read More </button>
                         </div>
                     </a>
                 </div>
@@ -92,18 +90,18 @@ function createPosts(cards) {
         }
         else if(card.isLinkedInPost){
             cardElement.innerHTML = `
-            <div class="card1">
-                <div class="card-body text-center">
+            <div class="news-card1">
+                <div class="news-card-body text-center">
                     <img src="${card.imgSrc}" style="height: 250px; border-radius: 5px">
                     <i class="fa-brands fa-linkedin appIcon"></i>
                         <h3 class="article-heading" id="interactive" style="font-size: 20px">${card.heading}</h3>
                     
-                    <div class="text-container">
+                    <div class="news-text-container">
                         <p class="article-about small" id="interactive-about">${card.about}</p>
                     </div>
                     <a href="${card.link}">
                         <div class="button-container">
-                            <button class="button1"> Read More </button>
+                            <button class="news-button1"> Read More </button>
                         </div>
                     </a>
                 </div>
