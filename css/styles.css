@@ -1263,7 +1263,6 @@ a.text-primary:focus {
 }
 
 #newsletter {
-    padding-bottom: 6vh;
     padding-top: 1vh;
     background-color: #fafafa;
     
@@ -1277,7 +1276,7 @@ a.text-primary:focus {
 }
 #newsletter-text{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 600;
     color: #700000;
     -webkit-text-stroke-width: 1px;
@@ -1837,3 +1836,14 @@ input {
     margin-right: auto;
     margin-bottom: 10px;
 }
+
+._popupContainer_evhv6_200 iframe {
+    max-height: 720px !important;
+}
+/* 
+@media screen and (max-width: 600px) {
+    ._popupContainer_evhv6_200 iframe {
+        max-height: 800px !important;
+    }
+    
+} */
