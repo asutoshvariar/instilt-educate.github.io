@@ -1839,11 +1839,16 @@ input {
 
 ._popupContainer_evhv6_200 iframe {
     max-height: 720px !important;
+    font-size: 10px;
 }
-/* 
-@media screen and (max-width: 600px) {
+
+.bDPQpy {
+    padding: 0 !important;
+}
+
+@media screen and (max-width: 470px) {
     ._popupContainer_evhv6_200 iframe {
-        max-height: 800px !important;
+        max-height: 600px !important;
     }
     
-} */
+}
