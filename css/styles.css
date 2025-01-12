@@ -1265,7 +1265,6 @@ a.text-primary:focus {
 #newsletter {
     padding-top: 1vh;
     background-color: #fafafa;
-    
 }
 
 #news-iframe
@@ -1274,6 +1273,7 @@ a.text-primary:focus {
     margin-left: auto;
     margin-right: auto;
 }
+
 #newsletter-text{
     text-align: center;
     font-size: 3.5rem;
@@ -1837,16 +1837,27 @@ input {
     margin-bottom: 10px;
 }
 
+.newsletter-widget {
+    height: 600px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vh;
+}
+
 ._popupContainer_evhv6_200 iframe {
     max-height: 720px !important;
     font-size: 10px;
 }
 
-.bDPQpy {
-    padding: 0 !important;
+@media screen and (max-width: 470px) {
+    ._popupContainer_evhv6_200 iframe {
+        max-height: 650px !important;
+    }
+    
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 350px) {
     ._popupContainer_evhv6_200 iframe {
         max-height: 600px !important;
     }
