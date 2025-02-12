@@ -35,7 +35,7 @@ function createPosts(cards) {
                     <div class="news-text-container">
                         <p class="article-about small" id="interactive-about" margin-top: 1 flex-grow: 1>${card.about}</p>
                     </div>
-                    <a href="${card.link}">
+                    <a href="${card.link}" target="_blank">
                         <div class="button-container">
                             <button class="news-button1" flex-grow: 1> Read More </button>
                         </div>
