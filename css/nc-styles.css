@@ -56,6 +56,12 @@
         flex: 0 0 30%;
     }
 }
+
+@media (max-width: 767px) {
+    .news-card1:hover {
+        transform: none;
+    }
+}
 /* @media (min-width: 992px) {
     .news-col-md-4 {
         flex: 0 0 30%;
