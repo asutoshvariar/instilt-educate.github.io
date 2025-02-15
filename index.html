@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="css/gallery/owl.theme.default.css ">
     <link rel="stylesheet" href="css/gallery/gallery-style.css">
     <link rel="stylesheet" href="css/gallery/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
     <script src="https://kit.fontawesome.com/21cad11b53.js" crossorigin="anonymous"></script>
     <script src="js/mapdata.js"></script>
@@ -241,7 +243,7 @@
         <div class="heading">Our Model</div>
         <p class="model-text">In an effort to grow and deepen the understanding of our students, we use a unique model. For our faculty, we pair one native English speaker with another tutor proficient in the language of the students. This way students are able to enjoy the best of both worlds as they are pushed to communicate seamlessly with a qualified tutor who speaks English in their day-to-day, allowing them some great outside exposure. At the same time, the other tutor is always to ensure that the students are following, maintaining a comfortable and familiar environment for the children.</p>
         <div class="slider">
-            <div class="owl-carousel owl-theme"></div>
+            <div id='model-carousel' class="owl-carousel owl-theme"></div>
         </div>
         </div>
     </section>
@@ -271,7 +273,10 @@
         <div class="news-container">
             <div class="news-row" id="card-container"></div>
         </div>
-        <script src="/js/news-cards.js"></script>
+        <div class="slider">
+            <div id='news-carousel' class="owl-carousel owl-theme d-none"></div>
+        </div>
+        <script src="/js/news-cards.js" type="module"></script>
     </section>
 
     <section class="signup-section" style="width: 100vw;background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), !important;margin-left: calc(50% - 50vw);">
@@ -554,6 +559,7 @@
     
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/carousel-script.js"></script>
+    <script src="js/news-carousel-script.js" type="module"></script>
 
     <script>
         
@@ -561,6 +567,8 @@
         c.innerHTML = Math.round(250).toString();
     </script>
     <script type="text/javascript" async src="https://embeds.beehiiv.com/attribution.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/news-carousel-script.js" type="module"></script>
 
 </body>
 <script>

@@ -12,7 +12,7 @@ const cardData = [
         link: 'https://instilts-newsletter-0a931b.beehiiv.com/p/empowering-education-new-batches-in-india-and-africa-and-launching-the-india-council',
     },
     {
-        imgSrc: '../assets/img/news-cards/INEN28grad.png',
+        imgSrc: '../assets/img/news-cards/graduation.jpg',
         heading: 'Salaam Baalak Trust - First Batch Graduation!',
         about: 'In July, our first batch with Salaam Baalak Trust saw 14 high school graduates transform through Instilt\'s lessons. They improved their English and experienced personal growth, celebrated in a heartfelt graduation ceremony honoring their journey and hard work.',
         link: 'https://instilts-newsletter-0a931b.beehiiv.com/p/salaam-baalak-trust-batch-s-graduation',
@@ -22,7 +22,6 @@ const cardData = [
 
 function createPosts(cards) {
     const container = document.getElementById('card-container');
-    
     cards.forEach(card => {
         const cardElement = document.createElement('div');
         cardElement.classList.add('news-col-md-4');
@@ -57,3 +56,5 @@ function createPosts(cards) {
 }
 
 createPosts(cardData);
+
+export { cardData };
