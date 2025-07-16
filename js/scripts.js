@@ -75,7 +75,7 @@ function showPopup() {
 
 async function getTeamData() {
 	try {
-		const URL = "https://tutor-timings.vercel.app/getRecords";
+		const URL = "https://tutor-timings.vercel.app/getDetails";
 
 		const res = await fetch(URL, { method: "GET" });
 		if (res.status != 200) {
@@ -90,27 +90,29 @@ async function getTeamData() {
 }
 
 async function onPageLoad() {
-	// const dataContainer = document.getElementById("loading_text");
-	// dataContainer.textContent = "Loading...";
-	// document.getElementById("loading_text").hidden = false;
-	// const data = await getTeamData();
-	// if (data != null) {
-	//   console.log(data);
-	//   document.getElementById("loading_text").hidden = true;
-	//   // Display the fetched data
-	//   loadImages(data);	
-	// } else {
-	//   document.getElementById("loading_text").hidden = true;
-	// }
 	// import data from data.js
-	var teamData;
+	// var teamData;
 	var partnerData;
 	import('./data.js').then((data) => {
-		teamData = data.teamData;
+	// 	teamData = data.teamData;
 		partnerData = data.partnerData;	
-		loadImages(teamData);
+	// 	loadImages(teamData);
 		loadPartners(partnerData);
 	})
+
+
+	const dataContainer = document.getElementById("loading_text");
+	dataContainer.textContent = "Loading...";
+	document.getElementById("loading_text").hidden = false;
+	const data = await getTeamData();
+	if (data != null) {
+		console.log(data);
+		document.getElementById("loading_text").hidden = true;
+		// Display the fetched data
+		loadImages(data);	
+	} else {
+		document.getElementById("loading_text").hidden = true;
+	}
 // }
 	// }
 }
