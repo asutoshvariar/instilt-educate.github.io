@@ -53,24 +53,30 @@
 })(jQuery); // End of use strict
 
 window.addEventListener("DOMContentLoaded", onPageLoad);
-window.addEventListener("DOMContentLoaded", showPopup);
+// window.addEventListener("DOMContentLoaded", showPopup);
+window.addEventListener("DOMContentLoaded", removePopupImage);
 
-function showPopup() {
-	const popup = document.getElementById("popup");
-	const closeButton = document.getElementById("close");
-	const overlay = document.getElementById("overlay");
-	const navButton = document.getElementById("nav-button");
-
-	popup.classList.add("active");
-	overlay.classList.add("active");
-	navButton.disabled = true;
-
-	closeButton.addEventListener("click", () => {
-		popup.classList.remove("active");
-		overlay.classList.remove("active");
-		navButton.disabled = false;
-	});
+function removePopupImage() {
+	const img = document.getElementsByClassName("sc-1a30cb0b-1 fmhGQz");
+	console.log(img);
 }
+
+// function showPopup() {
+// 	const popup = document.getElementById("popup");
+// 	const closeButton = document.getElementById("close");
+// 	const overlay = document.getElementById("overlay");
+// 	const navButton = document.getElementById("nav-button");
+
+// 	popup.classList.add("active");
+// 	overlay.classList.add("active");
+// 	navButton.disabled = true;
+
+// 	closeButton.addEventListener("click", () => {
+// 		popup.classList.remove("active");
+// 		overlay.classList.remove("active");
+// 		navButton.disabled = false;
+// 	});
+// }
 
 
 async function getTeamData() {
@@ -145,6 +151,10 @@ function loadImages(data) {
 	});
 	// display cards in order
 
+	// remove certain people
+	const remove = ["Danisha Panigrahi", "Shravani Tushar Kulkarni"]
+	data = data.filter((m) => !remove.includes(m.name))
+
 	var founder = data.filter(
 		(m) => 
 			m.position === "Founder" ||
@@ -169,8 +179,17 @@ function loadImages(data) {
 	);
 	addCards(CFO);
 
+	var HR_TO = data.filter(m => m.division?.includes("Head of Technical Operations") || m.division?.includes("Head of Human Resources"));
+	addCards(HR_TO);
+
+	var team_heads = data.filter(m => m.position?.includes("Head of") || m.team?.includes("Head of") || m.division?.includes("Head of"));
+	addCards(team_heads);
+
 	var admins = data.filter((m) => m.team === "Admin");
 	addCards(admins);
+
+	var Newsletter = data.filter((m) => m.team === "Newsletter");
+	addCards(Newsletter);
 
 	var HR = data.filter((m) => m.team === "Human Resources");
 	addCards(HR);
