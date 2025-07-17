@@ -128,7 +128,7 @@ function loadImages(data) {
 	function addCards(team) {
 		team.forEach((member) => {
 			var div = document.createElement("div");
-			div.setAttribute("class", `team-card`);
+			div.setAttribute("class", `team-card capitalize`);
 			div.setAttribute("id", `${member.id}`);
 			div.innerHTML = document.getElementById("teams-page-content").innerHTML;
 			div.innerHTML = div.innerHTML

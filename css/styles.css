@@ -1863,3 +1863,7 @@ input {
     }
     
 }
+
+.capitalize {
+    text-transform: capitalize;
+}
