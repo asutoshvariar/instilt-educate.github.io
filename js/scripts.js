@@ -184,8 +184,11 @@ function loadImages(data) {
 	);
 	addCards(CFO);
 
-	var HR_TO = data.filter(m => m.position?.includes("Head of Technical Operations") || m.position?.includes("Head of Human Resources"));
-	addCards(HR_TO);
+	var HEAD_TECH_OPS = data.filter(m => m.position?.includes("Head of Technical Operations"))
+	addCards(HEAD_TECH_OPS);
+
+	var HEAD_HR = data.filter(m => m.position?.includes("Head of Human Resources"));
+	addCards(HEAD_HR);
 
 	var team_heads = data.filter(m => m.position?.includes("Head of") || m.team?.includes("Head of") || m.division?.includes("Head of"));
 	addCards(team_heads);
