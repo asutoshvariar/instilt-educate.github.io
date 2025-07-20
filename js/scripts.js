@@ -189,7 +189,7 @@ function loadImages(data) {
 	addCards(admins);
 
 	var otherHeads = data.filter((m) => m.position?.includes("Head"));
-	addCards(Newsletter);
+	addCards(otherHeads);
 
 	var HR = data.filter((m) => m.team === "Human Resources");
 	addCards(HR);
