@@ -154,6 +154,11 @@ function loadImages(data) {
 	// remove certain people
 	const remove = ["Danisha Panigrahi", "Shravani Tushar Kulkarni"]
 	data = data.filter((m) => !remove.includes(m.name))
+	data.map(card => {
+		if (card.position == "Cohort Head" && card.cohort) {
+			card.position = card.cohort + " " + card.position;
+		}
+	})
 
 	var founder = data.filter(
 		(m) => 
@@ -188,9 +193,6 @@ function loadImages(data) {
 	var admins = data.filter((m) => m.team === "Admin");
 	addCards(admins);
 
-	var otherHeads = data.filter((m) => m.position?.includes("Head"));
-	addCards(otherHeads);
-
 	var HR = data.filter((m) => m.team === "Human Resources");
 	addCards(HR);
 
@@ -199,6 +201,9 @@ function loadImages(data) {
 
 	var techOps = data.filter((m) => m.team === "Technical Operations");
 	addCards(techOps);
+
+	var otherHeads = data.filter((m) => m.position?.includes("Head"));
+	addCards(otherHeads);
 
 	// other members
 	addCards(data);
