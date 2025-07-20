@@ -112,7 +112,7 @@ async function onPageLoad() {
 	document.getElementById("loading_text").hidden = false;
 	const data = await getTeamData();
 	if (data != null) {
-		console.log(data);
+		// console.log(data);
 		document.getElementById("loading_text").hidden = true;
 		// Display the fetched data
 		loadImages(data);	
@@ -179,7 +179,7 @@ function loadImages(data) {
 	);
 	addCards(CFO);
 
-	var HR_TO = data.filter(m => m.division?.includes("Head of Technical Operations") || m.division?.includes("Head of Human Resources"));
+	var HR_TO = data.filter(m => m.position?.includes("Head of Technical Operations") || m.position?.includes("Head of Human Resources"));
 	addCards(HR_TO);
 
 	var team_heads = data.filter(m => m.position?.includes("Head of") || m.team?.includes("Head of") || m.division?.includes("Head of"));
@@ -188,7 +188,7 @@ function loadImages(data) {
 	var admins = data.filter((m) => m.team === "Admin");
 	addCards(admins);
 
-	var Newsletter = data.filter((m) => m.team === "Newsletter");
+	var otherHeads = data.filter((m) => m.position?.includes("Head"));
 	addCards(Newsletter);
 
 	var HR = data.filter((m) => m.team === "Human Resources");
