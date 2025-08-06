@@ -451,6 +451,27 @@ a:hover {
     max-height: 150px;
 }
 
+/* .team-image:hover {
+    mask-image: url("/assets/img/email.png");
+    mask-size: 80%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    animation: all 3s ease;
+} */
+
+.mask {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 80%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    filter: invert();
+}
+.image-container:hover .mask {
+    opacity: 1;
+}
+
 .donate-btn {
     vertical-align: middle;
     width: fit-content;

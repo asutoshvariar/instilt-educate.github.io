@@ -465,9 +465,12 @@
             <h2 id="loading_text" hidden></h2>
             <script id="teams-page-content" type="text/html">
             <div class="content">
-              <div class="img mb-4 sm:mb-5">
+              <div class="img mb-4 sm:mb-5 image-container" style="position: relative; overflow: hidden;">
                 <a class="team-email" href="">
                   <img class="team-image" onerror="removeElement(this)" class="red-highlight" loading="lazy" src="">
+                  <div class="mask">
+                    <img class="email-mask" src="assets/img/email.png">
+                  </div>
                 </a>
               </div>
               <div class="details">
